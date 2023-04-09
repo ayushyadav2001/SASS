@@ -1,0 +1,69 @@
+@import "variables";
+@import "mixins";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+// single line comment
+.main-container{
+    @include display-center();
+    height: 100vh;
+    width: 100vw;
+    // display: grid;
+    // place-items: center;
+    background-color: $bg-color; /*Variable usage*/
+
+    // nesting 
+    h2{
+       
+        @include font-styleing(uppercase);
+        // operators in sass
+        // font-size: 3rem * 2;
+        // font-size: 3rem + 3rem;
+
+       
+
+        &:hover{
+            
+        // @include font-styleing();
+
+            color: rgb(172, 222, 81);
+            // operators in sass
+            // font-size: 3rem * 2;
+            // font-size: 3rem + 3rem;
+            font-size: $f-size+$f-size;
+        
+        
+        }
+        &::before{
+            content: "Yow Are Awesome";
+        }
+    
+    
+    }
+    p{
+        // color: rgb(30, 138, 48);
+        // operators in sass
+        // font-size: 3rem * 2;
+        // font-size: 3rem + 3rem;
+        // font-size: $f-size+$f-size;
+        @include font-styleing(lowercase);
+    
+        &:hover{
+            color: rgb(227, 67, 27);
+            // operators in sass
+            // font-size: 3rem * 2;
+            // font-size: 3rem + 3rem;
+            font-size: $f-size+$f-size;
+        
+        
+        }
+    }
+  
+ 
+}
+

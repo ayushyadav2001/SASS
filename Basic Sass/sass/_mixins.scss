@@ -1,0 +1,14 @@
+@mixin display-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+@mixin font-styleing($param1){
+    color: rgb(139, 63, 197);
+    font-size: $f-size+$f-size;
+    text-transform: $param1;
+    letter-spacing: 1rem;
+    
+}

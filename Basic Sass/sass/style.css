@@ -1,0 +1,39 @@
+/*Variable declaration*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(131, 223, 223); /*Variable usage*/
+}
+.main-container h2 {
+  color: rgb(139, 63, 197);
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+.main-container h2:hover {
+  color: rgb(172, 222, 81);
+  font-size: 2.4rem;
+}
+.main-container h2::before {
+  content: "Yow Are Awesome";
+}
+.main-container p {
+  color: rgb(139, 63, 197);
+  font-size: 2.4rem;
+  text-transform: lowercase;
+  letter-spacing: 1rem;
+}
+.main-container p:hover {
+  color: rgb(227, 67, 27);
+  font-size: 2.4rem;
+}/*# sourceMappingURL=style.css.map */
